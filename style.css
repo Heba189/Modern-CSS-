@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  /* color: #000; */
+  font-size: 15px;
+  line-height: 1.5;
+}
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  color: #293d7c;
+  display: none;
+}
+a {
+  /* color: #262626; */
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* Nav */
+.main-nav {
+  color: #293d7c !important;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 30px;
+}
+.logo h3 {
+  padding: 0 10px;
+  color: #293d7c !important;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0 10px;
+}
+.main-nav ul li a {
+  position: relative;
+  text-align: center;
+}
+.main-nav ul li a::after {
+  transition: all 0.3s;
+  content: '';
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 100%;
+  height: 1px;
+  background-color: #293d7c;
+  position: absolute;
+}
+.main-nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  color: #293d7c !important;
+}
+.main-nav ul.main-menu li {
+  text-align: center;
+}
+
+.main-nav ul.main-menu li a {
+  color: #293d7c !important;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.right-menu li a {
+  color: #293d7c !important;
+  font-size: 1rem;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* Showcase */
+.showcase {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  background: url(./woman-wearing-gray-shirt-3184298.jpg) center center
+    no-repeat;
+}
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: #293d7c;
+  padding: 10px;
+  border-radius: 3px;
+}
+.showcase .btn {
+  margin-top: 20px;
+}
+/** home-cards **/
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+.home-cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  font-weight: bold;
+}
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+/*  gaming  */
+.gaming {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 350px;
+  background: url(./xbox.png) no-repeat center center/cover;
+}
+.gaming .content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.gaming p,
+.about p {
+  margin: 10px 0 30px;
+}
+/*About section*/
+.about {
+  width: 100%;
+  height: 350px;
+  background: url(./last.jpg) no-repeat center center/cover;
+}
+
+.about .content {
+  width: 55%;
+  padding: 40px 10px 30px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.dark {
+  color: #fff;
+}
+.dark .btn {
+  background-color: #f4f4f4;
+  color: #333;
+  margin-top: 2rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px;
+}
+.social p {
+  color: #0067b8;
+  font-weight: bold;
+  border-bottom: #0067b8 3px solid;
+  padding-bottom: 5px;
+  margin-right: 2rem;
+}
+.social a {
+  padding-right: 20px;
+}
+/* LINKS */
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px;
+}
+.links li {
+  line-height: 2.8;
+}
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* footer */
+footer {
+  background: #f2f2f2;
+  color: 616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer div {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  font-weight: 500;
+  color: #293d7c;
+}
+footer div i {
+  margin-right: 6px;
+}
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-inner ul li a {
+  display: flex;
+  padding-right: 10px;
+  color: #333;
+}
+
+/** media query **/
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+    font-size: .8rem;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+  .main-nav ul.main-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+  .main-nav ul.main-menu.show li a {
+    line-height: 3;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .right-menu {
+    margin-right: 2rem;
+    font-size: 1.3rem;
+  }
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-nav ul.main-menu li a {
+    color: #293d7c !important;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .main-nav ul.main-menu li {
+    text-align: center;
+  }
+  .gaming h2 {
+    margin-bottom: 2rem;
+  }
+  .gaming p {
+    display: none;
+  }
+
+  .about .content {
+    width: 80%;
+    padding: 20px 10px 20px 30px;
+  }
+
+  .dark .btn {
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 0.7rem;
+  }
+
+  .links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .links li {
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .links-inner {
+    grid-template-columns: 1fr;
+  }
+}
